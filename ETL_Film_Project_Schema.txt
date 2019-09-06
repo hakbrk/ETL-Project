@@ -1,0 +1,129 @@
+CREATE TABLE "movie" (
+  "imdb_id" VARCHAR(9) PRIMARY KEY,
+  "title" VARCHAR(50),
+  "homegage" VARCHAR(100),
+  "budget" INT,
+  "original_language" VARCHAR(2),
+  "iso_639_id" VARCHAR(2),
+  "overview" VARCHAR(200),
+  "popularity" FLOAT,
+  "release_date" DATE,
+  "revenue" INT,
+  "runtime" INT,
+  "status" VARCHAR(10),
+  "tagline" VARCHAR(200),
+  "original_title" VARCHAR(50),
+  "vote_average" FLOAT,
+  "vote_count" INT,
+  "adult" VARCHAR(5),
+  "rated" VARCHAR(5),
+  "awards" VARCHAR(200)
+);
+
+CREATE TABLE "film_actor" (
+  "actor_id" VARCHAR(5),
+  "imdb_id" VARCHAR(9),
+  PRIMARY KEY (actor_id, imdb_id)
+);
+
+CREATE TABLE "actor" (
+  "actor_id" VARCHAR(5) PRIMARY KEY,
+  "first_name" VARCHAR(45),
+  "last_name" VARCHAR(45)
+);
+
+CREATE TABLE "spoken_languages" (
+  "iso_639_id" VARCHAR(2) PRIMARY KEY,
+  "name" VARCHAR(20)
+);
+
+CREATE TABLE "film_spoken_languaeges" (
+  "iso_639_id" VARCHAR(2),
+  "imdb_id" VARCHAR(9),
+  PRIMARY KEY (iso_639_id, imdb_id)
+);
+
+CREATE TABLE "genre" (
+  "genre_id" VARCHAR(5) PRIMARY KEY,
+  "name" VARCHAR(25)
+);
+
+CREATE TABLE "film_genre" (
+  "genre_id" VARCHAR(5),
+  "imdb_id" VARCHAR(9),
+  PRIMARY KEY (genre_id, imdb_id)
+);
+
+CREATE TABLE "production_company" (
+  "company_id" VARCHAR(5) PRIMARY KEY,
+  "name" VARCHAR(25)
+);
+
+CREATE TABLE "film_production_company" (
+  "company_id" VARCHAR(5),
+  "imdb_id" VARCHAR(9),
+  PRIMARY KEY (company_id, imdb_id)
+);
+
+CREATE TABLE "writer" (
+  "writer_id" VARCHAR(5) PRIMARY KEY,
+  "first_name" VARCHAR(45),
+  "last_name" VARCHAR(45)
+);
+
+CREATE TABLE "film_writer" (
+  "writer_id" VARCHAR(5),
+  "imdb_id" VARCHAR(9),
+  PRIMARY KEY (writer_id, imdb_id)
+);
+
+CREATE TABLE "director" (
+  "director_id" VARCHAR(5) PRIMARY KEY,
+  "first_name" VARCHAR(45),
+  "last_name" VARCHAR(45)
+);
+
+CREATE TABLE "film_director" (
+  "director_id" VARCHAR(5),
+  "imdb_id" VARCHAR(9),
+  PRIMARY KEY (director_id, imdb_id)
+);
+
+CREATE TABLE "country" (
+  "iso_3166_id" VARCHAR(2) PRIMARY KEY,
+  "name" VARCHAR(50)
+);
+
+CREATE TABLE "film_country" (
+  "iso_3166_id" VARCHAR(2),
+  "imdb_id" VARCHAR(9),
+  PRIMARY KEY (iso_3166_id, imdb_id)
+);
+
+ALTER TABLE "film_actor" ADD FOREIGN KEY ("actor_id") REFERENCES "actor" ("actor_id");
+
+ALTER TABLE "film_actor" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_spoken_languaeges" ADD FOREIGN KEY ("iso_639_id") REFERENCES "spoken_languages" ("iso_639_id");
+
+ALTER TABLE "film_spoken_languaeges" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_genre" ADD FOREIGN KEY ("genre_id") REFERENCES "genre" ("genre_id");
+
+ALTER TABLE "film_genre" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_production_company" ADD FOREIGN KEY ("company_id") REFERENCES "production_company" ("company_id");
+
+ALTER TABLE "film_production_company" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_writer" ADD FOREIGN KEY ("writer_id") REFERENCES "writer" ("writer_id");
+
+ALTER TABLE "film_writer" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_director" ADD FOREIGN KEY ("director_id") REFERENCES "director" ("director_id");
+
+ALTER TABLE "film_director" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_country" ADD FOREIGN KEY ("iso_3166_id") REFERENCES "country" ("iso_3166_id");
+
+ALTER TABLE "film_country" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
