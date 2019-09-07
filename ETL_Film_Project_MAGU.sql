@@ -106,7 +106,7 @@ CREATE TABLE "collection" (
 CREATE TABLE "w_collec" (
   "collection_id" INT,
   "imdb_id" VARCHAR(9)
- )
+ );
 
 
 ALTER TABLE "film_actor" ADD PRIMARY KEY ("actor_id", "imdb_id");
