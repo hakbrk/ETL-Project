@@ -7,4 +7,4 @@ The purpose of this project was to **E**xtract **C**lean and **L**oad (**ETL**) 
 
 -  Extract - The data contained in the movie data csv file was in csv format but presented challenges to extract that column data into a                usable format.  Some snapshots of what the data format looked like prior to extraction into a pandas DataFrame is shown below.
 
-![Data Example](movie_data_ex1)
+![Data Example](movie_data_ex1.PNG)
