@@ -28,6 +28,16 @@ CREATE TABLE "film_actor" (
   "imdb_id" VARCHAR(9)
 );
 
+CREATE TABLE "film_rating" (
+  "ratings" VARCHAR(10),
+  "imdb_id" VARCHAR(9)
+);
+
+CREATE TABLE "film_awards" (
+  "awards" VARCHAR(400),
+  "imdb_id" VARCHAR(9)
+);
+
 CREATE TABLE "actor" (
   "actor_id" VARCHAR(10) PRIMARY KEY,
   "first_name" VARCHAR(90),
@@ -128,6 +138,10 @@ ALTER TABLE "movie" ADD FOREIGN KEY ("collection_id") REFERENCES "collection" ("
 ALTER TABLE "film_actor" ADD FOREIGN KEY ("actor_id") REFERENCES "actor" ("actor_id");
 
 ALTER TABLE "film_actor" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_rating" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
+
+ALTER TABLE "film_awards" ADD FOREIGN KEY ("imdb_id") REFERENCES "movie" ("imdb_id");
 
 ALTER TABLE "film_spoken_language" ADD FOREIGN KEY ("lang_id") REFERENCES "spoken_language" ("lang_id");
 
