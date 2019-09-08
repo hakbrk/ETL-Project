@@ -2,9 +2,9 @@
 Project Team : Martha Aguilar and John Hawkins
 
 <h3> Files included</h3>
-- ETL_Movie_Data_ERD - ERD of the movies_db
-- ETL_Film_Project_MAGU - Schema code for movies_db
-- Movies_ETL-MAG.ipynb - Jupyter Notebook Pyton Code file used for development of the movies_metadata.csv data extraction, authored by Martha Aguilar
+* ETL_Movie_Data_ERD - ERD of the movies_db
+* ETL_Film_Project_MAGU - Schema code for movies_db
+* Movies_ETL-MAG.ipynb - Jupyter Notebook Pyton Code file used for development of the movies_metadata.csv data extraction, authored by Martha Aguilar
 -
 
                
