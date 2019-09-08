@@ -26,21 +26,29 @@ The purpose of this project was to **E**xtract **C**lean and **L**oad (**ETL**) 
 #### Extract 
 The data contained in the movie data csv file was in csv format but presented challenges to extract that column data into a                usable format.  Some snapshots of what the data format looked like prior to extraction into a pandas DataFrame is shown below.
 
+#### movie_metadata.csv
 ![Data Example](movie_data_ex1.PNG)
 
+#### movie_metadata.csv
 ![Data Example](movie_data_ex2.PNG)
 
 In total there were xxx categories of data extracted from this data set.  The code which specifically associates with this csv is located within the repository and titled Movies_ETL.ipynb.
 
 The data extracted from OMDB API calls was generated and extracted by using a list of imdb_id's to make API calls which were then stored as lists of dictionaries.  The data calls had a JSON format to them.  An example is shown below.  There was further cleaning of the data accomplished in the same step as the extraction, but this will be discussed later.  In all 45,415 calls were made with two calls containing no data, this iteration took approximately 1-1.5 hours to accomplish.
 
+#### OMDB API Data response
 ![OMDB API Example](movie_data_ex3.PNG)
 
 Other issues that arose during the API calls were errors associated with what I assume was the API call being made this often resulted in the error below.  Another error pictured below that caused the loop to crash was having no data resent for the requested response, in both cases the code was able to be restarted from the point it crashed, a try except calls were included later that seems to have worked to alleviate the issues.
 
+#### API Call Error
 ![API Call Error Example](error3.PNG)
 
+#### API Call Error
 ![API Call Error Example](error4.PNG)
+
+#### Working Try Except
+![Working Try Except](error6.PNG)
 
 
 
