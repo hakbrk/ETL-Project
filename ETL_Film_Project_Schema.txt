@@ -1,25 +1,3 @@
-CREATE TABLE "movie" (
-  "imdb_id" VARCHAR(9) PRIMARY KEY,
-  "title" VARCHAR(50),
-  "homegage" VARCHAR(100),
-  "budget" INT,
-  "original_language" VARCHAR(2),
-  "iso_639_id" VARCHAR(2),
-  "overview" VARCHAR(200),
-  "popularity" FLOAT,
-  "release_date" DATE,
-  "revenue" INT,
-  "runtime" INT,
-  "status" VARCHAR(10),
-  "tagline" VARCHAR(200),
-  "original_title" VARCHAR(50),
-  "vote_average" FLOAT,
-  "vote_count" INT,
-  "adult" VARCHAR(10),
-  "rated" VARCHAR(10),
-  "awards" VARCHAR(200)
-);
-
 CREATE TABLE "film_actor" (
   "actor_id" VARCHAR(10),
   "imdb_id" VARCHAR(9),
