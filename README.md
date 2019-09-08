@@ -3,8 +3,10 @@ Project Team : Martha Aguilar and John Hawkins
 
 ### Files included
 + ETL_Movie_Data_ERD - ERD of the movies_db
-ETL_Film_Project_MAGU - Schema code for movies_db
-Movies_ETL-MAG.ipynb - Jupyter Notebook Pyton Code file used for development of the movies_metadata.csv data extraction, authored by Martha Aguilar
+* ETL_Film_Project_MAGU - Schema code for movies_db
+- Movies_ETL-MAG.ipynb - Jupyter Notebook Pyton Code file used for development of the movies_metadata.csv data extraction, authored by Martha Aguilar
++ movies_metadata - CSV file with data to be extracted by Movies_ETL-MAG.ipynb
+* unique_indmID.csv - File of imdb_id's used to run API calls during development
 
                
 ### Project Description
