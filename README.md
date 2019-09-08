@@ -21,7 +21,7 @@ Project Team : Martha Aguilar and John Hawkins
 
 The purpose of this project was to **E**xtract **C**lean and **L**oad (**ETL**) data from two sources.  The data chosen for this project was extracted form two sourses, the first was is a movie data csv file located on kaggle at https://www.kaggle.com/rounakbanik/the-movies-dataset.  The second data set was extracted using the imdb_id's located in the csv files to extract additioanl data usin OMDB API calls.   Follow is a description of the various steps taken to accomplish this.
 
--  Extract 
+-  **E**xtract 
 The data contained in the movie data csv file was in csv format but presented challenges to extract that column data into a                usable format.  Some snapshots of what the data format looked like prior to extraction into a pandas DataFrame is shown below.
 
 ![Data Example](movie_data_ex1.PNG)
@@ -29,3 +29,10 @@ The data contained in the movie data csv file was in csv format but presented ch
 ![Data Example](movie_data_ex2.PNG)
 
 In total there were xxx categories of data extracted from this data set.  The code which specifically associates wtih this csv is located within the reposity and titled Movies_ETL.ipynb.
+
+The data extracted from OMDB API calls was generated and extracted by using a list of imdb_id's to make API calls which were then stored as lists of dictionaries.  The data calls had a JSON format to them.  An example is shown below.
+
+![OMDB API Example](movie_data_ex3.PNG)
+
+- **C**lean
+
