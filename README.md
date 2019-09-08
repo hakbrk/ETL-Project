@@ -2,8 +2,7 @@
 Project Team : Martha Aguilar and John Hawkins
 
 <h3> Files included</h3>
-- ETL_Movie_Data_ERD - ERD of movies_db.
--
+- ETL
 
                
 <h3>Project Description</h3>
