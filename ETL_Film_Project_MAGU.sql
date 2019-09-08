@@ -24,14 +24,14 @@ CREATE TABLE "movie" (
 );
 
 CREATE TABLE "film_actor" (
-  "actor_id" VARCHAR(5),
+  "actor_id" VARCHAR(10),
   "imdb_id" VARCHAR(9)
 );
 
 CREATE TABLE "actor" (
-  "actor_id" VARCHAR(5) PRIMARY KEY,
-  "first_name" VARCHAR(45),
-  "last_name" VARCHAR(45)
+  "actor_id" VARCHAR(10) PRIMARY KEY,
+  "first_name" VARCHAR(90),
+  "last_name" VARCHAR(90)
 );
 
 CREATE TABLE "spoken_language" (
@@ -65,24 +65,24 @@ CREATE TABLE "film_production_company" (
 );
 
 CREATE TABLE "writer" (
-  "writer_id" VARCHAR(5) PRIMARY KEY,
-  "first_name" VARCHAR(45),
-  "last_name" VARCHAR(45)
+  "writer_id" VARCHAR(10) PRIMARY KEY,
+  "first_name" VARCHAR(90),
+  "last_name" VARCHAR(90)
 );
 
 CREATE TABLE "film_writer" (
-  "writer_id" VARCHAR(5),
+  "writer_id" VARCHAR(10),
   "imdb_id" VARCHAR(9)
 );
 
 CREATE TABLE "director" (
-  "director_id" VARCHAR(5) PRIMARY KEY,
-  "first_name" VARCHAR(45),
-  "last_name" VARCHAR(45)
+  "director_id" VARCHAR(10) PRIMARY KEY,
+  "first_name" VARCHAR(90),
+  "last_name" VARCHAR(90)
 );
 
 CREATE TABLE "film_director" (
-  "director_id" VARCHAR(5),
+  "director_id" VARCHAR(10),
   "imdb_id" VARCHAR(9)
 );
 
@@ -106,7 +106,7 @@ CREATE TABLE "collection" (
 CREATE TABLE "w_collec" (
   "collection_id" INT,
   "imdb_id" VARCHAR(9)
- )
+ );
 
 
 ALTER TABLE "film_actor" ADD PRIMARY KEY ("actor_id", "imdb_id");
