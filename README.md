@@ -21,7 +21,7 @@ Project Team : Martha Aguilar and John Hawkins
 
 The purpose of this project was to **E**xtract **C**lean and **L**oad (**ETL**) data from two sources.  The data chosen for this project was extracted form two sources, the first was is a movie data csv file located on kaggle at https://www.kaggle.com/rounakbanik/the-movies-dataset.  The second data set was extracted using the imdb_id's located in the csv files to extract additional data using OMDB API calls.   Follow is a description of the various steps taken to accomplish this.
 
-###**E**xtract 
+#### Extract 
 The data contained in the movie data csv file was in csv format but presented challenges to extract that column data into a                usable format.  Some snapshots of what the data format looked like prior to extraction into a pandas DataFrame is shown below.
 
 ![Data Example](movie_data_ex1.PNG)
@@ -42,16 +42,16 @@ Other issues that arose during the API calls were errors associated with what I 
 
 
 
-- **C**lean
+#### Clean
 The data cleaning and organization portion of the project for both the movie_metadata and OMDB API calls data presented the majority of the challenge in this exercise.
 
 XXXXXXX SPEAK ABOUT MOVIE_METADATA CLEANINGXXXXXXX.  
 
 Regarding the data cleaning for the API calls, during the first version of the code the data was extracted and placed in a single list of dictionaries format, then separated to datasets and parsing of names and other dating accomplished by the use of multiple iterrow loops.  This presented a major issue with time, the original API calls took over 1 hour to perform and then each preceding iterrow loop took an additional hour to complete.  The code was then refined to do the majority of the parsing and data manipulation within the original API call loop.
 
--**L**oad
+#### Load
 After completion of the extract and clean functions the data was then loaded into a Postgres Database via a sqlalchemy engine session being opened up with the pre-existing movies_db database and associated tables being present.
 
-###Conclusions
+### Conclusions
 
 This was a challenging project and presented team members with challenges that were not thought to be that great when the project started.  Issues with data cleaning and ensuring that code is efficient were learned.
