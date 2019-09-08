@@ -15,6 +15,8 @@ Project Team : Martha Aguilar and John Hawkins
   - film_director_df.csv - Output file of film_director data used as backup
   - film_writer_df.csv - Output file of film_writer data used as backup
   - writer_df.csv - Output file of writer data used as backup
+  - film_awards_df.csv - Output file of film_awards data used as backup
+  - film_ratings_df.csv - Output file of film_ratings data used as backup
 
                
 ### Project Description
