@@ -10,6 +10,13 @@ In order to run the code and load data into a Postgres data base
 ![Data Example](Movies_ETL_image1.PNG)
 - Run Movies_ETL.ipynb
 - Open the Python code located in the Jupyter Notebook OMDB_Data.ipynb.
+- In order to run the OMDB API calls you will need an OMDP API Key.
+- You can utilize the key by creating a file called api_keys.py and entering your key in that file as shown below.  
+![API_Code](api_key_image.PNG)
+- Or alternativley you can enter you API code directly into the API call f string at this location.  
+![API_Code](api_key_image3.PNG)
+- If you have opted to enter it directly into the API call then you must delete or comment out the api_keys import at this location.  
+![API_Code](api_key_image2.PNG)
 - Enter Postgres username and password in the engine connection code.  
 ![Data Example](OMDB_Data_image1.PNG)
 - Run OMDB_Data.ipynb (Note: To run the entire code it will take over 1 hour due to the time it take making API calls, there is code included (image below) that by default is commented out, in order to provdie a shortcut it is possible to un-comment this code block and run the code from that point).  
