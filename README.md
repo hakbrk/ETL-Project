@@ -21,7 +21,7 @@ In order to run the code and load data into a Postgres data base
 ![Data Example](images/OMDB_Data_image1.PNG)
 - Run OMDB_Data.ipynb (Note: To run the entire code it will take over 1 hour due to the time it take making API calls, there is code included (image below) that by default is commented out, in order to provdie a shortcut it is possible to un-comment this code block and run the code from that point).  
 ![Data Example](images/OMDB_Data_image2.PNG)
-- Enjoy exploring the data located in movies_db, use the [ETL_Movie_Data_ERD](ETL_Movie_Data_ERD.pdf) as a guide.
+- Enjoy exploring the data located in movies_db, use the [ETL_Movie_Data_ERD](ETL_Film_Project_ERD.PDF) as a guide.
 
 ### Files included
 + ETL_Movie_Data_ERD - ERD of the movies_db
