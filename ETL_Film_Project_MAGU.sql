@@ -18,8 +18,6 @@ CREATE TABLE "movie" (
   "vote_average" NUMERIC(8,2),
   "vote_count" INT,
   "adult" VARCHAR(5),
-  "rated" VARCHAR(5),
-  "awards" VARCHAR(200),
   "collection_id" INT DEFAULT NULL
 );
 
