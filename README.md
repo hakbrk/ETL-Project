@@ -30,14 +30,15 @@ In order to run the code and load data into a Postgres data base
 + movies_metadata - CSV file with data to be extracted by Movies_ETL-MAG.ipynb
 * unique_indmID.csv - File of imdb_id's used to run API calls during development
 - OMDB_Data.ipynb - Jupyter Notebook Python Code file used for development of the OMDB API data calls, authored by John Hawkins and improvements made with the assistance of Martha Aguilar.
-- actor_df.csv - Output file of actor data used as backup
-- director_df.csv - Output file of director data used as backup
-- film_actor_df.csv - Output file of film_acotor data used as backup
-- film_director_df.csv - Output file of film_director data used as backup
-- film_writer_df.csv - Output file of film_writer data used as backup
-- writer_df.csv - Output file of writer data used as backup
-- film_awards_df.csv - Output file of film_awards data used as backup
-- film_ratings_df.csv - Output file of film_ratings data used as backup
+-Data
+	- actor_df.csv - Output file of actor data used as backup
+	- director_df.csv - Output file of director data used as backup
+	- film_actor_df.csv - Output file of film_acotor data used as backup
+	- film_director_df.csv - Output file of film_director data used as backup
+	- film_writer_df.csv - Output file of film_writer data used as backup
+	- writer_df.csv - Output file of writer data used as backup
+	- film_awards_df.csv - Output file of film_awards data used as backup
+	- film_ratings_df.csv - Output file of film_ratings data used as backup
 
                
 ### Project Description
