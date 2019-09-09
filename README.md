@@ -12,7 +12,7 @@ In order to run the code and load data into a Postgres data base
 - Open the Python code located in the Jupyter Notebook OMDB_Data.ipynb.
 - Enter Postgres username and password in the engine connection code.  
 ![Data Example](OMDB_Data_image1.PNG)
-- Run OMDB_Data.ipynb (Note: To run the entire code it will take over i hour, there is code (image below) that by default is commented out, in order to provdie a shortcut it is possible to un-comment this code block and run the code from that point).  
+- Run OMDB_Data.ipynb (Note: To run the entire code it will take over 1 hour due to the time it take making API calls, there is code included (image below) that by default is commented out, in order to provdie a shortcut it is possible to un-comment this code block and run the code from that point).  
 ![Data Example](OMDB_Data_image2.PNG)
 - Enjoy exploring the data located in movies_db, use the ETL_Movie_Data_ERD as a guide.
 
@@ -66,8 +66,8 @@ Other issues that arose during the API calls were errors associated with what I 
 
 
 
-#### Clean
-The data cleaning and organization portion of the project for both the movie_metadata and OMDB API calls data presented the majority of the challenge in this exercise.
+#### Transform
+The data cleaning and transform portion of the project for both the movie_metadata and OMDB API calls data presented the majority of the challenge in this exercise.
 
 The CSV file turned out to be more challenging than expected in the begining. Some columns contained pseudo-jason content that needed to be parsed and converted into a relation-table format. Two functions were created:
 	1. Function to deal with data that will create a 1 - M relationship
