@@ -23,6 +23,8 @@ In order to run the code and load data into a Postgres data base
 ![Data Example](images/OMDB_Data_image2.PNG)
 - Enjoy exploring the data located in movies_db, use the ETL_Movie_Data_ERD which can be downloaded in the repository as a guide.
 
+***
+
 ### Files included
 + ETL_Movie_Data_ERD - ERD of the movies_db
 * ETL_Film_Project_DDL - Schema code for movies_db
@@ -41,7 +43,7 @@ In order to run the code and load data into a Postgres data base
 	- unique_indmID.csv - File of imdb_id's used to run API calls during development  
 - images folder
 	- Various images used in this readme
-
+***
                
 ### Project Description
 
@@ -87,11 +89,11 @@ Regarding the data cleaning for the API calls, during the first version of the c
 
 #### Load
 After completion of the extract and clean functions the data was then loaded into a Postgres Database via a sqlalchemy engine session being opened up with the pre-existing movies_db database and associated tables being present.
-
+***
 ### Conclusions
 
 This was a challenging project and presented team members with challenges that were not thought to be that great when the project started.  Issues with data cleaning and ensuring that code is efficient were learned.
-
+***
 ## Authors
 
 * Martha Aguilar
