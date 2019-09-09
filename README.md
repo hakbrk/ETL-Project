@@ -1,5 +1,6 @@
 # ETL-Project - Movie Database
-Project Team : Martha Aguilar and John Hawkins
+In this project we explore the fun and exciting world of data cleansing
+
 
 ### Files included
 + ETL_Movie_Data_ERD - ERD of the movies_db
@@ -21,7 +22,7 @@ Project Team : Martha Aguilar and John Hawkins
                
 ### Project Description
 
-The purpose of this project was to **E**xtract **C**lean and **L**oad (**ETL**) data from two sources.  The data chosen for this project was extracted form two sources, the first was is a movie data csv file located on kaggle at https://www.kaggle.com/rounakbanik/the-movies-dataset.  The second data set was extracted using the imdb_id's located in the csv files to extract additional data using OMDB API calls.   Follow is a description of the various steps taken to accomplish this.
+The purpose of this project was to **E**xtract **T**ransform and **L**oad (**ETL**) data from two sources.  The data chosen for this project was extracted form two sources, the first was is a movie data csv file located on kaggle at https://www.kaggle.com/rounakbanik/the-movies-dataset.  The second data set was extracted using the imdb_id's located in the csv files to extract additional data using OMDB API calls.   Follow is a description of the various steps taken to accomplish this.
 
 #### Extract 
 The data contained in the movie data csv file was in csv format but presented challenges to extract that column data into a                usable format.  Some snapshots of what the data format looked like prior to extraction into a pandas DataFrame is shown below.
@@ -55,7 +56,9 @@ Other issues that arose during the API calls were errors associated with what I 
 #### Clean
 The data cleaning and organization portion of the project for both the movie_metadata and OMDB API calls data presented the majority of the challenge in this exercise.
 
-XXXXXXX SPEAK ABOUT MOVIE_METADATA CLEANINGXXXXXXX.  
+The CSV file turned out to be more challenging than expected in the begining. Some columns contained pseudo-jason content that needed to be parsed and converted into a relation-table format. Two functions were created:
+	1. Function to deal with data that will create a 1 - M relationship
+	2. Function to deal with data that will create a M - M relationship
 
 Regarding the data cleaning for the API calls, during the first version of the code the data was extracted and placed in a single list of dictionaries format, then separated to datasets and parsing of names and other dating accomplished by the use of multiple iterrow loops.  This presented a major issue with time, the original API calls took over 1 hour to perform and then each preceding iterrow loop took an additional hour to complete.  The code was then refined to do the majority of the parsing and data manipulation within the original API call loop.
 
@@ -65,3 +68,8 @@ After completion of the extract and clean functions the data was then loaded int
 ### Conclusions
 
 This was a challenging project and presented team members with challenges that were not thought to be that great when the project started.  Issues with data cleaning and ensuring that code is efficient were learned.
+
+## Authors
+
+* Martha Aguilar
+* John Hawkins
