@@ -7,21 +7,21 @@ In order to run the code and load data into a Postgres data base
 - Copy into the query tool window and execute the table creation code in ETL_Film_Project_DDL.
 - Open the Python code located in the Jupyter Notebook Movies_ETL.ipynb.
 - Enter Postgres username and password in the engine connection code.   
-![Data Example](Movies_ETL_image1.PNG)
+![Data Example](images/Movies_ETL_image1.PNG)
 - Run Movies_ETL.ipynb
 - Open the Python code located in the Jupyter Notebook OMDB_Data.ipynb.
 - In order to run the OMDB API calls you will need an OMDP API Key.
 - You can utilize the key by creating a file called api_keys.py and entering your key in that file as shown below.  
-![API_Code](api_key_image.PNG)
+![API_Code](images/api_key_image.PNG)
 - Or alternativley you can enter you API code directly into the API call f string at this location.  
-![API_Code](api_key_image3.PNG)
+![API_Code](images/api_key_image3.PNG)
 - If you have opted to enter it directly into the API call then you must delete or comment out the api_keys import at this location.  
-![API_Code](api_key_image2.PNG)
+![API_Code](images/api_key_image2.PNG)
 - Enter Postgres username and password in the engine connection code.  
-![Data Example](OMDB_Data_image1.PNG)
+![Data Example](images/OMDB_Data_image1.PNG)
 - Run OMDB_Data.ipynb (Note: To run the entire code it will take over 1 hour due to the time it take making API calls, there is code included (image below) that by default is commented out, in order to provdie a shortcut it is possible to un-comment this code block and run the code from that point).  
-![Data Example](OMDB_Data_image2.PNG)
-- Enjoy exploring the data located in movies_db, use the ETL_Movie_Data_ERD as a guide.
+![Data Example](images/OMDB_Data_image2.PNG)
+- Enjoy exploring the data located in movies_db, use the ETL_Movie_Data_ERD which can be downloaded in the repository as a guide.
 
 ### Files included
 + ETL_Movie_Data_ERD - ERD of the movies_db
@@ -48,28 +48,28 @@ The purpose of this project was to **E**xtract **T**ransform and **L**oad (**ETL
 The data contained in the movie data csv file was in csv format but presented challenges to extract that column data into a                usable format.  Some snapshots of what the data format looked like prior to extraction into a pandas DataFrame is shown below.
 
 #### movie_metadata.csv
-![Data Example](movie_data_ex1.PNG)
+![Data Example](images/movie_data_ex1.PNG)
 
 #### movie_metadata.csv
-![Data Example](movie_data_ex2.PNG)
+![Data Example](images/movie_data_ex2.PNG)
 
 In total there were xxx categories of data extracted from this data set.  The code which specifically associates with this csv is located within the repository and titled Movies_ETL.ipynb.
 
 The data extracted from OMDB API calls was generated and extracted by using a list of imdb_id's to make API calls which were then stored as lists of dictionaries.  The data calls had a JSON format to them.  An example is shown below.  There was further cleaning of the data accomplished in the same step as the extraction, but this will be discussed later.  In all 45,415 calls were made with two calls containing no data, this iteration took approximately 1-1.5 hours to accomplish.
 
 #### OMDB API Data response
-![OMDB API Example](movie_data_ex3.PNG)
+![OMDB API Example](images/movie_data_ex3.PNG)
 
 Other issues that arose during the API calls were errors associated with what I assume was the API call being made this often resulted in the error below.  Another error pictured below that caused the loop to crash was having no data resent for the requested response, in both cases the code was able to be restarted from the point it crashed, a try except calls were included later that seems to have worked to alleviate the issues.
 
 #### API Call Error
-![API Call Error Example](error3.PNG)
+![API Call Error Example](images/error3.PNG)
 
 #### API Call Error
-![API Call Error Example](error4.PNG)
+![API Call Error Example](images/error4.PNG)
 
 #### Working Try Except
-![Working Try Except](error6.PNG)
+![Working Try Except](images/error6.PNG)
 
 
 
