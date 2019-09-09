@@ -1,0 +1,6 @@
+# ignore the file with the API keys
+.ipynb_checkpoints
+__pycache__
+api_key.py
+config.py
+DELETE
