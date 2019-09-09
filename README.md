@@ -66,8 +66,8 @@ Other issues that arose during the API calls were errors associated with what I 
 
 
 
-#### Clean
-The data cleaning and organization portion of the project for both the movie_metadata and OMDB API calls data presented the majority of the challenge in this exercise.
+#### Transform
+The data cleaning and transform portion of the project for both the movie_metadata and OMDB API calls data presented the majority of the challenge in this exercise.
 
 The CSV file turned out to be more challenging than expected in the begining. Some columns contained pseudo-jason content that needed to be parsed and converted into a relation-table format. Two functions were created:
 	1. Function to deal with data that will create a 1 - M relationship
