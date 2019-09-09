@@ -1,11 +1,18 @@
 # ETL-Project - Movie Database
 In this project we explore the fun and exciting world of data cleansing
 
+### Quick Start
+In order to run the code and load data into a Postgres data base
++ Create a Postgres Database called movies_db.
+* Copy into the query tool window and execute the table creation code in ETL_Film_Project_DDL.
+- Run the Python code located in the Jupyter Notebook Movies_ETL.ipynb.
+- Run the Python code located in the Jupyter Notebook OMDB_Data.ipynb.
+- Enjoy exploring the data located in movies_db, use the ETL_Movie_Data_ERD as a guide.
 
 ### Files included
 + ETL_Movie_Data_ERD - ERD of the movies_db
-* ETL_Film_Project_MAGU - Schema code for movies_db
-- Movies_ETL-MAG.ipynb - Jupyter Notebook Python Code file used for development of the movies_metadata.csv data extraction, authored by Martha Aguilar
+* ETL_Film_Project_DDL - Schema code for movies_db
+- Movies_ETL.ipynb - Jupyter Notebook Python Code file used for development of the movies_metadata.csv data extraction, authored by Martha Aguilar
 + movies_metadata - CSV file with data to be extracted by Movies_ETL-MAG.ipynb
 * unique_indmID.csv - File of imdb_id's used to run API calls during development
 - OMDB_Data.ipynb - Jupyter Notebook Python Code file used for development of the OMDB API data calls, authored by John Hawkins and improvements made with the assistance of Martha Aguilar.
