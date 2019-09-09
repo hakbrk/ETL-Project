@@ -1,5 +1,3 @@
-CREATE DATABASE movies_db
-
 CREATE TABLE "movie" (
   "imdb_id" VARCHAR(9) PRIMARY KEY,
   "title" VARCHAR(150),
