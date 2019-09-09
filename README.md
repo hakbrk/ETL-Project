@@ -27,7 +27,7 @@ In order to run the code and load data into a Postgres data base
 + ETL_Movie_Data_ERD - ERD of the movies_db
 * ETL_Film_Project_DDL - Schema code for movies_db
 - Movies_ETL.ipynb - Jupyter Notebook Python Code file used for development of the movies_metadata.csv data extraction, authored by Martha Aguilar
-- OMDB_Data.ipynb - Jupyter Notebook Python Code file used for development of the OMDB API data calls, authored by John Hawkins and improvements made with the assistance of Martha Aguilar.
+- OMDB_Data.ipynb - Jupyter Notebook Python Code file used for development of the OMDB API data calls, authored by John Hawkins and improvements made with the assistance of Martha Aguilar.  
 -Data
 	- actor_df.csv - Output file of actor data used as backup
 	- director_df.csv - Output file of director data used as backup
