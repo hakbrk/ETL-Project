@@ -3,8 +3,8 @@ In this project we explore the fun and exciting world of data cleansing
 
 ### Quick Start
 In order to run the code and load data into a Postgres data base
-+ Create a Postgres Database called movies_db.
-* Copy into the query tool window and execute the table creation code in ETL_Film_Project_DDL.
+- Create a Postgres Database called movies_db.
+- Copy into the query tool window and execute the table creation code in ETL_Film_Project_DDL.
 - Run the Python code located in the Jupyter Notebook Movies_ETL.ipynb.
 - Run the Python code located in the Jupyter Notebook OMDB_Data.ipynb.
 - Enjoy exploring the data located in movies_db, use the ETL_Movie_Data_ERD as a guide.
