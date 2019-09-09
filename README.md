@@ -37,7 +37,7 @@ In order to run the code and load data into a Postgres data base
 	- writer_df.csv - Output file of writer data used as backup
 	- film_awards_df.csv - Output file of film_awards data used as backup
 	- film_ratings_df.csv - Output file of film_ratings data used as backup
-	- movies_metadata - CSV file with data to be extracted by Movies_ETL-MAG.ipynb
+	- movies_metadata - CSV file with data to be extracted by Movies_ETL.ipynb
 	- unique_indmID.csv - File of imdb_id's used to run API calls during development  
 - images
 	- Various images used in this readme
